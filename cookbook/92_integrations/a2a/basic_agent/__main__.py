@@ -5,6 +5,10 @@ Basic A2A Server
 Starts a local A2A server backed by an Agno agent executor.
 """
 
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 import uvicorn
 from a2a.server.apps import A2AStarletteApplication
 from a2a.server.request_handlers import DefaultRequestHandler
